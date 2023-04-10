@@ -38,10 +38,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Enter the Chediverse
+                  Build NFT Marketplaces
                 </span>
                 <br />
-                Buy Stake Earn Sell
+                faster than ever.
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link
@@ -49,9 +49,10 @@ const Home: NextPage = () => {
                   href="https://thirdweb.com"
                   target="_blank"
                 >
-                  Chedi Knights
-                </Link>{"https://opensea.io/collection/the-chedi-knights "}
-                open the door to the Chediverse 
+                  thirdweb
+                </Link>{" "}
+                gives you the tools you need to create audited, performant, and
+                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
