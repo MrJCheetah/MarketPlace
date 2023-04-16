@@ -38,33 +38,33 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                 Welcome to the Chediverse NFT Marketplace
                 </span>
                 <br />
-                faster than ever.
+                Buy-Sell-Stake-Earn
               </h1>
               <p className={styles.heroSubtitle}>
-                <Link
-                  className={styles.link}
-                  href="https://thirdweb.com"
-                  target="_blank"
-                >
-                  thirdweb
-                </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                
+                Earn .01 $Econ every <b> hour</b>, <i>not days</i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
-                <Link className={styles.heroCta} href="/buy">
-                  Get Started
+              <Link
+                  className={styles.secondaryCta}
+                  href="https://main--chediverse.netlify.app/buy"
+                  target="_blank"
+                >
+                  Buy
+                </Link>
+                <Link className={styles.heroCta} href="/sell">
+                  Sell
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="https://main--chediverse.netlify.app/stake"
                   target="_blank"
                 >
-                  GitHub
+                  Stake
                 </Link>
               </div>
             </div>
