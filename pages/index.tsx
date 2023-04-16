@@ -56,15 +56,15 @@ const Home: NextPage = () => {
                 >
                   Buy
                 </Link>
-                <Link className={styles.heroCta} href="/sell">
+                <Link className={styles.heroCta} href="/buy">
                   Sell
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://main--chediverse.netlify.app/stake"
+                  href="https://github.com/thirdweb-example/marketplace-v3"
                   target="_blank"
                 >
-                  Stake
+                  GitHub
                 </Link>
               </div>
             </div>
