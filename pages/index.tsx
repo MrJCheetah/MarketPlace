@@ -61,10 +61,10 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="https://main--chediverse.netlify.app/stake"
                   target="_blank"
                 >
-                  GitHub
+                  Stake
                 </Link>
               </div>
             </div>
