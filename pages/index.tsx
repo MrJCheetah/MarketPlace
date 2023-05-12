@@ -56,7 +56,7 @@ const Home: NextPage = () => {
                 >
                   Buy
                 </Link>
-                <Link className={styles.heroCta} href="/buy">
+                <Link className={styles.heroCta} href="/sell">
                   Sell
                 </Link>
                 <Link
