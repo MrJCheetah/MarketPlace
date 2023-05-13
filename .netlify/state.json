@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Nottingham",
+			"country": {
+				"code": "GB",
+				"name": "United Kingdom"
+			},
+			"subdivision": {
+				"code": "ENG",
+				"name": "England"
+			},
+			"timezone": "Europe/London",
+			"latitude": 53.1315,
+			"longitude": -1.2975
+		},
+		"timestamp": 1683894179962
+	}
+}
