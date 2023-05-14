@@ -27,3 +27,5 @@ export const stakingContractAddress =
   "0x5B3CE765371372f2551991be8b64fF04a223c5a1";
   export const derroidContractAddress =
   "0x955075C2dec2B255262B59FaBFD379F5a5ABab17";
+  export const nftDropContractAddress =
+  "0x698842107efbba4357fdee60d4ea533d665a68de";

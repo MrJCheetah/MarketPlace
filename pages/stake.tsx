@@ -13,7 +13,6 @@ import {
   import { useEffect, useState } from "react";
   import NFTCard from "../components/NFTCard";
   import {
-    NFT_COLLECTION_ADDRESS,
     tokenContractAddress,
     stakingContractAddress,
     
@@ -22,8 +21,8 @@ import {
   
   const Stake: NextPage = () => {
     const address = useAddress();
-    const { contract: NFT_COLLECTION_ADDRESS } = useContract(
-      NFT_COLLECTION_ADDRESS,
+    const { contract: nftDropContract } = useContract(
+      tokenContractAddress,
       "nft-drop"
     );
     const { contract: tokenContract } = useContract(
@@ -31,7 +30,7 @@ import {
       "token"
     );
     const { contract, isLoading } = useContract(stakingContractAddress);
-    const { data: ownedNfts } = useOwnedNFTs(NFT_COLLECTION_ADDRESS, address);
+    const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
     const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
     const { data: stakedTokens } = useContractRead(
