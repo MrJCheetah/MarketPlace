@@ -41,30 +41,25 @@ const Home: NextPage = () => {
                   Welcome to the Chediverse
                 </span>
                 <br />
-                Buy - Sell - Stake - Earn
+                
               </h1>
               <p className={styles.heroSubtitle}>
-                <Link
-                  className={styles.link}
-                  href="https://thirdweb.com"
-                  target="_blank"
-                >
-                  thirdweb
-                </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                                  Buy - Sell - Stake - Earn
               </p>
 
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/buy">
-                  Get Started
+                  Buy
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="https://chediverse.com/sell"
                   target="_blank"
                 >
-                  GitHub
+                  Sell
+                </Link>
+                <Link className={styles.heroCta} href="/stake">
+                  Stake
                 </Link>
               </div>
             </div>
