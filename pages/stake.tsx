@@ -13,16 +13,16 @@ import {
   import { useEffect, useState } from "react";
   import NFTCard from "../components/NFTCard";
   import {
-    nftDropContractAddress,
-    stakingContractAddress,
     tokenContractAddress,
-  } from "../consts/contractAddresses.ts";
+    stakingContractAddress,
+    
+  }from "../const/contractAddresses";
   import styles from "../styles/Home.module.css";
   
   const Stake: NextPage = () => {
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
-      nftDropContractAddress,
+      tokenContractAddress,
       "nft-drop"
     );
     const { contract: tokenContract } = useContract(
