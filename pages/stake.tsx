@@ -15,13 +15,14 @@ import {
   import {
     tokenContractAddress,
     stakingContractAddress,
+    NFT_COLLECTION_ADDRESS,
     
   }from "../const/contractAddresses";
   import styles from "../styles/Home.module.css";
   
   const Stake: NextPage = () => {
     const address = useAddress();
-    const { contract: nftDropContract } = useContract(
+    const { contract: NFT_COLLECTION_ADDRESS } = useContract(
       tokenContractAddress,
       "nft-drop"
     );
@@ -30,7 +31,7 @@ import {
       "token"
     );
     const { contract, isLoading } = useContract(stakingContractAddress);
-    const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
+    const { data: ownedNfts } = useOwnedNFTs(NFT_COLLECTION_ADDRESS, address);
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
     const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
     const { data: stakedTokens } = useContractRead(
@@ -53,12 +54,12 @@ import {
     async function stakeNft(id: string) {
       if (!address) return;
   
-      const isApproved = await nftDropContract?.isApproved(
+      const isApproved = await NFT_COLLECTION_ADDRESS?.isApproved(
         address,
         stakingContractAddress
       );
       if (!isApproved) {
-        await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
+        await NFT_COLLECTION_ADDRESS?.setApprovalForAll(stakingContractAddress, true);
       }
       await contract?.call("stake", [id]);
     }
